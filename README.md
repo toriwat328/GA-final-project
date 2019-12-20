@@ -3,7 +3,7 @@
 ## Project Idea - PHOTOcapsule NYC
 New York is always changing. This app is for New York photographers community where you can organize your photos based on the neighborhood it was taken using a map of Manhattan that is separated by neighborhoods and the year it was taken. Its kind of like a photography time capsule for each neighborhood. 
 
-![Map Mockup](/img/mockup.png)
+![Map Mockup](public/img/mockup.png)
 
 ## User Stories
 
