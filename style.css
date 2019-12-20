@@ -1,0 +1,16 @@
+.map {
+    width: 200px;
+    background-color: pink;
+}
+
+#East_Harlem:hover{
+    fill: red;
+}
+
+#Harlem:hover{
+    fill: green;
+}
+
+#Morningside_Heights:hover{
+    fill: gold;
+}
