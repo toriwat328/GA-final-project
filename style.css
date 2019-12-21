@@ -1,16 +1,314 @@
+body {
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-start; */
+    background-image: url(public/img/map_lines-04_optimized2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .maptitle {
+    font-family: 'Damion', cursive;
+    color: white;
+    border: 1px solid gold;
+    transform: rotate(-60deg)
+} */
+
+h3 {
+    font-family: 'Damion', cursive;
+    color: white;
+    /* border: 1px solid gold; */
+    font-size: 40px;
+    margin: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    transform: rotate(-73deg);
+    /* text-align: center; */
+    height: 165px;
+
+}
 .map {
-    width: 200px;
-    background-color: pink;
+    /* border: 1px solid hotpink; */
+    margin-left: -150px;
+    /* margin: auto; */
+    width: 375px;
+    /* background-color: pink; */
+    transform: rotate(20deg)
 }
 
-#East_Harlem:hover{
+.map-lines {
+    width: 500px;
+}
+
+#Layer_1 {
+    fill: white;
+}
+
+#East_Harlem.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#East_Harlem.red {
+    fill: hotpink;
+    transform: scale(2.5);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Morningside_Heights.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Morningside_Heights.red {
+    fill: orange;
+    transform: scale(2.5) translate(100px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Upper_West_Side.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Upper_West_Side.red {
     fill: red;
+    transform: scale(2.5) translate(100px, -100px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
 }
 
-#Harlem:hover{
-    fill: green;
+#Central_Park.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
 }
 
-#Morningside_Heights:hover{
-    fill: gold;
+#Central_Park.red {
+    fill: thistle;
+    transform: scale(2.5) translate(50px, -75px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Harlem.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Harlem.red {
+    fill: thistle;
+    transform: scale(2.5) translate(60px, 50px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Upper_East_Side.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Upper_East_Side.red {
+    fill: purple;
+    transform: scale(2.5) translate(0px, -90px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Lenox_Hill.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Lenox_Hill.red {
+    fill: purple;
+    transform: scale(2.5) translate(0px, -200px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Hell_s_Kitchen.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Hell_s_Kitchen.red {
+    fill: red;
+    transform: scale(2.5) translate(100px, -250px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Theater_District.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Theater_District.red {
+    fill: red;
+    transform: scale(2.5) translate(50px, -250px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Midtown.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Midtown.red {
+    fill: red;
+    transform: scale(2.5) translate(20px, -250px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Chelsea.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Chelsea.red {
+    fill: red;
+    transform: scale(2.5) translate(80px, -300px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Nomad.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Nomad.red {
+    fill: red;
+    transform: scale(2.5) translate(10px, -300px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Kips_Bay.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Kips_Bay.red {
+    fill: red;
+    transform: scale(2.5) translate(-40px, -300px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#West_Village.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#West_Village.red {
+    fill: red;
+    transform: scale(2.5) translate(80px, -370px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Greenwich_Village.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Greenwich_Village.red {
+    fill: red;
+    transform: scale(2.5) translate(30px, -370px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#East_Village.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#East_Village.red {
+    fill: red;
+    transform: scale(2.5) translate(-40px, -370px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Soho_ChinaTown_Tribeca.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Soho_ChinaTown_Tribeca.red {
+    fill: red;
+    transform: scale(2.5) translate(40px, -450px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Lower_East_Side.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Lower_East_Side.red {
+    fill: red;
+    transform: scale(2.5) translate(-40px, -450px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#Financial_District.black{
+    transform: scale(1);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    fill: white;
+}
+
+#Financial_District.red {
+    fill: red;
+    transform: scale(2.5) translate(-10px, -500px);
+    transition-duration: .5s;
+    transition-timing-function: linear;
 }
