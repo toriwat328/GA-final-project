@@ -1,20 +1,66 @@
 body {
-    margin-top: 50px;
+    margin: 0;
+    width: 100%;
     background-color: black;
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
     /* justify-content: flex-start; */
     background-image: url(public/img/map_lines-04_optimized2.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* .maptitle {
+.container {
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* justify-content: space-around; */
+    margin: 0 auto;
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    z-index: 2;
+    margin: 0px;
+    width: 100%;
+    position: sticky; top: 0;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+}
+
+nav img {
+    margin-left: 36%;
+}
+
+.footer {
+    width: 100%;
+    background-color: lightgrey;
+    margin: 0px;
+    height: 200px;
+    /* padding: 50px; */
+
+}
+
+.footer h2 {
     font-family: 'Damion', cursive;
     color: white;
-    border: 1px solid gold;
-    transform: rotate(-60deg)
-} */
+    margin: 0;
+}
+
+.footer img {
+    width: 50px;
+
+}
 
 h3 {
     font-family: 'Damion', cursive;
@@ -22,21 +68,49 @@ h3 {
     /* border: 1px solid gold; */
     font-size: 40px;
     margin: 0px;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-bottom: 100px;
+    margin-left: -60px;
 
     transform: rotate(-73deg);
     /* text-align: center; */
-    height: 165px;
+    height: 40px;
+    width: 260px;
+
+}
+.mapside {
+    /* border: 5px solid orange; */
+    width: 38%;
+    height: 450px;
+    /* position: fixed; */
+    padding-bottom: 20px;
+}
+
+.photoside {
+    /* border: 5px solid thistle; */
+    width: 62%;
+    height: 450px;
+    background-color: black;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Damion', cursive;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
 
 }
 .map {
+    margin-top: 210px;
     /* border: 1px solid hotpink; */
-    margin-left: -150px;
+    margin-left: -60px;
     /* margin: auto; */
-    width: 375px;
+    width: 305px;
     /* background-color: pink; */
-    transform: rotate(20deg)
+    transform: rotate(20deg) translateY(-300px);
+}
+
+#East_Harlem:hover, #Morningside_Heights:hover, #Upper_West_Side:hover, #Central_Park:hover, #Harlem:hover, #Upper_East_Side:hover, #Lenox_Hill:hover, #Hell_s_Kitchen:hover, #Theater_District:hover, #Midtown:hover, #Chelsea:hover, #Nomad:hover, #Kips_Bay:hover, #West_Village:hover, #Greenwich_Village:hover, #East_Village:hover, #Soho_ChinaTown_Tribeca:hover, #Lower_East_Side:hover, #Financial_District:hover {
+    cursor: pointer;
 }
 
 .map-lines {
@@ -47,266 +121,266 @@ h3 {
     fill: white;
 }
 
-#East_Harlem.black{
+#East_Harlem.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#East_Harlem.red {
+#East_Harlem.on {
     fill: hotpink;
     transform: scale(2.5);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Morningside_Heights.black{
+#Morningside_Heights.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Morningside_Heights.red {
+#Morningside_Heights.on {
     fill: orange;
     transform: scale(2.5) translate(100px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Upper_West_Side.black{
+#Upper_West_Side.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Upper_West_Side.red {
+#Upper_West_Side.on {
     fill: red;
     transform: scale(2.5) translate(100px, -100px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Central_Park.black{
+#Central_Park.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Central_Park.red {
+#Central_Park.on {
     fill: thistle;
     transform: scale(2.5) translate(50px, -75px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Harlem.black{
+#Harlem.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Harlem.red {
+#Harlem.on {
     fill: thistle;
     transform: scale(2.5) translate(60px, 50px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Upper_East_Side.black{
+#Upper_East_Side.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Upper_East_Side.red {
+#Upper_East_Side.on {
     fill: purple;
     transform: scale(2.5) translate(0px, -90px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Lenox_Hill.black{
+#Lenox_Hill.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Lenox_Hill.red {
+#Lenox_Hill.on {
     fill: purple;
     transform: scale(2.5) translate(0px, -200px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Hell_s_Kitchen.black{
+#Hell_s_Kitchen.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Hell_s_Kitchen.red {
+#Hell_s_Kitchen.on {
     fill: red;
     transform: scale(2.5) translate(100px, -250px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Theater_District.black{
+#Theater_District.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Theater_District.red {
+#Theater_District.on {
     fill: red;
     transform: scale(2.5) translate(50px, -250px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Midtown.black{
+#Midtown.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Midtown.red {
+#Midtown.on {
     fill: red;
     transform: scale(2.5) translate(20px, -250px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Chelsea.black{
+#Chelsea.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Chelsea.red {
+#Chelsea.on {
     fill: red;
     transform: scale(2.5) translate(80px, -300px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Nomad.black{
+#Nomad.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Nomad.red {
+#Nomad.on {
     fill: red;
     transform: scale(2.5) translate(10px, -300px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Kips_Bay.black{
+#Kips_Bay.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Kips_Bay.red {
+#Kips_Bay.on {
     fill: red;
     transform: scale(2.5) translate(-40px, -300px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#West_Village.black{
+#West_Village.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#West_Village.red {
+#West_Village.on {
     fill: red;
     transform: scale(2.5) translate(80px, -370px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Greenwich_Village.black{
+#Greenwich_Village.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Greenwich_Village.red {
+#Greenwich_Village.on {
     fill: red;
     transform: scale(2.5) translate(30px, -370px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#East_Village.black{
+#East_Village.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#East_Village.red {
+#East_Village.on {
     fill: red;
     transform: scale(2.5) translate(-40px, -370px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Soho_ChinaTown_Tribeca.black{
+#Soho_ChinaTown_Tribeca.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Soho_ChinaTown_Tribeca.red {
+#Soho_ChinaTown_Tribeca.on {
     fill: red;
     transform: scale(2.5) translate(40px, -450px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Lower_East_Side.black{
+#Lower_East_Side.off {
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Lower_East_Side.red {
+#Lower_East_Side.on {
     fill: red;
     transform: scale(2.5) translate(-40px, -450px);
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-#Financial_District.black{
+#Financial_District.off{
     transform: scale(1);
     transition-duration: .5s;
     transition-timing-function: linear;
     fill: white;
 }
 
-#Financial_District.red {
+#Financial_District.on {
     fill: red;
     transform: scale(2.5) translate(-10px, -500px);
     transition-duration: .5s;

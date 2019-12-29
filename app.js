@@ -1,322 +1,324 @@
 
 
-$('#East_Harlem').on('click', () => {
+$('#East_Harlem').on('click', (e) => {
 
-    if($('#East_Harlem').hasClass("black")){
+    if($('#East_Harlem').hasClass("off")){
 
-        $('#East_Harlem').removeClass("black");
-        $('#East_Harlem').addClass("red");
-
-
-    } else if($('#East_Harlem').hasClass("red")){
-        $('#East_Harlem').removeClass("red");
-        $('#East_Harlem').addClass("black");
+        $('#East_Harlem').removeClass("off").addClass("on");
+        // console.log(e.currentTarget.dataset.name);
+        $('#title').text(e.currentTarget.dataset.name)
 
 
-    }
-
-})
-
-$('#Morningside_Heights').on('click', () => {
-
-    if($('#Morningside_Heights').hasClass("black")){
-
-        $('#Morningside_Heights').removeClass("black");
-        $('#Morningside_Heights').addClass("red");
-
-
-    } else if($('#Morningside_Heights').hasClass("red")){
-        $('#Morningside_Heights').removeClass("red");
-        $('#Morningside_Heights').addClass("black");
+    } else if($('#East_Harlem').hasClass("on")){
+        $('#East_Harlem').removeClass("on").addClass("off");
+        // console.log(currentTarget.id);
+        $('#title').text('')
 
 
     }
 
 })
 
-$('#Upper_West_Side').on('click', () => {
+$('#Morningside_Heights').on('click', (e) => {
 
-    if($('#Upper_West_Side').hasClass("black")){
+    if($('#Morningside_Heights').hasClass("off")){
 
-        $('#Upper_West_Side').removeClass("black");
-        $('#Upper_West_Side').addClass("red");
-
-
-    } else if($('#Upper_West_Side').hasClass("red")){
-        $('#Upper_West_Side').removeClass("red");
-        $('#Upper_West_Side').addClass("black");
+        $('#Morningside_Heights').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name)
 
 
-    }
-
-})
-
-$('#Central_Park').on('click', () => {
-
-    if($('#Central_Park').hasClass("black")){
-
-        $('#Central_Park').removeClass("black");
-        $('#Central_Park').addClass("red");
-
-
-    } else if($('#Central_Park').hasClass("red")){
-        $('#Central_Park').removeClass("red");
-        $('#Central_Park').addClass("black");
+    } else if($('#Morningside_Heights').hasClass("on")){
+        $('#Morningside_Heights').removeClass("on").addClass("off");
+        $('#title').text('')
 
 
     }
 
 })
 
-$('#Harlem').on('click', () => {
+$('#Upper_West_Side').on('click', (e) => {
 
-    if($('#Harlem').hasClass("black")){
+    if($('#Upper_West_Side').hasClass("off")){
 
-        $('#Harlem').removeClass("black");
-        $('#Harlem').addClass("red");
-
-
-    } else if($('#Harlem').hasClass("red")){
-        $('#Harlem').removeClass("red");
-        $('#Harlem').addClass("black");
+        $('#Upper_West_Side').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name)
 
 
-    }
-
-})
-
-$('#Upper_East_Side').on('click', () => {
-
-    if($('#Upper_East_Side').hasClass("black")){
-
-        $('#Upper_East_Side').removeClass("black");
-        $('#Upper_East_Side').addClass("red");
-
-
-    } else if($('#Upper_East_Side').hasClass("red")){
-        $('#Upper_East_Side').removeClass("red");
-        $('#Upper_East_Side').addClass("black");
+    } else if($('#Upper_West_Side').hasClass("on")){
+        $('#Upper_West_Side').removeClass("on").addClass("off");
+            $('#title').text('');
 
 
     }
 
 })
 
-$('#Lenox_Hill').on('click', () => {
+$('#Central_Park').on('click', (e) => {
 
-    if($('#Lenox_Hill').hasClass("black")){
+    if($('#Central_Park').hasClass("off")){
 
-        $('#Lenox_Hill').removeClass("black");
-        $('#Lenox_Hill').addClass("red");
-
-
-    } else if($('#Lenox_Hill').hasClass("red")){
-        $('#Lenox_Hill').removeClass("red");
-        $('#Lenox_Hill').addClass("black");
+        $('#Central_Park').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name)
 
 
-    }
-
-})
-
-$('#Hell_s_Kitchen').on('click', () => {
-
-    if($('#Hell_s_Kitchen').hasClass("black")){
-
-        $('#Hell_s_Kitchen').removeClass("black");
-        $('#Hell_s_Kitchen').addClass("red");
-
-
-    } else if($('#Hell_s_Kitchen').hasClass("red")){
-        $('#Hell_s_Kitchen').removeClass("red");
-        $('#Hell_s_Kitchen').addClass("black");
+    } else if($('#Central_Park').hasClass("on")){
+        $('#Central_Park').removeClass("on").addClass("off");
+            $('#title').text('');
 
 
     }
 
 })
 
-$('#Theater_District').on('click', () => {
+$('#Harlem').on('click', (e) => {
 
-    if($('#Theater_District').hasClass("black")){
+    if($('#Harlem').hasClass("off")){
 
-        $('#Theater_District').removeClass("black");
-        $('#Theater_District').addClass("red");
-
-
-    } else if($('#Theater_District').hasClass("red")){
-        $('#Theater_District').removeClass("red");
-        $('#Theater_District').addClass("black");
+        $('#Harlem').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
 
 
-    }
-
-})
-
-$('#Midtown').on('click', () => {
-
-    if($('#Midtown').hasClass("black")){
-
-        $('#Midtown').removeClass("black");
-        $('#Midtown').addClass("red");
-
-
-    } else if($('#Midtown').hasClass("red")){
-        $('#Midtown').removeClass("red");
-        $('#Midtown').addClass("black");
+    } else if($('#Harlem').hasClass("on")){
+        $('#Harlem').removeClass("on").addClass("off");
+        $('#title').text('');
 
 
     }
 
 })
 
-$('#Chelsea').on('click', () => {
+$('#Upper_East_Side').on('click', (e) => {
 
-    if($('#Chelsea').hasClass("black")){
+    if($('#Upper_East_Side').hasClass("off")){
 
-        $('#Chelsea').removeClass("black");
-        $('#Chelsea').addClass("red");
-
-
-    } else if($('#Chelsea').hasClass("red")){
-        $('#Chelsea').removeClass("red");
-        $('#Chelsea').addClass("black");
+        $('#Upper_East_Side').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
 
 
-    }
-
-})
-
-$('#Nomad').on('click', () => {
-
-    if($('#Nomad').hasClass("black")){
-
-        $('#Nomad').removeClass("black");
-        $('#Nomad').addClass("red");
-
-
-    } else if($('#Nomad').hasClass("red")){
-        $('#Nomad').removeClass("red");
-        $('#Nomad').addClass("black");
+    } else if($('#Upper_East_Side').hasClass("on")){
+        $('#Upper_East_Side').removeClass("on").addClass("off");
+        $('#title').text('');
 
 
     }
 
 })
 
-$('#Kips_Bay').on('click', () => {
+$('#Lenox_Hill').on('click', (e) => {
 
-    if($('#Kips_Bay').hasClass("black")){
+    if($('#Lenox_Hill').hasClass("off")){
 
-        $('#Kips_Bay').removeClass("black");
-        $('#Kips_Bay').addClass("red");
-
-
-    } else if($('#Kips_Bay').hasClass("red")){
-        $('#Kips_Bay').removeClass("red");
-        $('#Kips_Bay').addClass("black");
+        $('#Lenox_Hill').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
 
 
-    }
-
-})
-
-$('#West_Village').on('click', () => {
-
-    if($('#West_Village').hasClass("black")){
-
-        $('#West_Village').removeClass("black");
-        $('#West_Village').addClass("red");
-
-
-    } else if($('#West_Village').hasClass("red")){
-        $('#West_Village').removeClass("red");
-        $('#West_Village').addClass("black");
+    } else if($('#Lenox_Hill').hasClass("on")){
+        $('#Lenox_Hill').removeClass("on").addClass("off");
+        $('#title').text('');
 
 
     }
 
 })
 
-$('#Greenwich_Village').on('click', () => {
+$('#Hell_s_Kitchen').on('click', (e) => {
 
-    if($('#Greenwich_Village').hasClass("black")){
+    if($('#Hell_s_Kitchen').hasClass("off")){
 
-        $('#Greenwich_Village').removeClass("black");
-        $('#Greenwich_Village').addClass("red");
-
-
-    } else if($('#Greenwich_Village').hasClass("red")){
-        $('#Greenwich_Village').removeClass("red");
-        $('#Greenwich_Village').addClass("black");
+        $('#Hell_s_Kitchen').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
 
 
-    }
-
-})
-
-$('#East_Village').on('click', () => {
-
-    if($('#East_Village').hasClass("black")){
-
-        $('#East_Village').removeClass("black");
-        $('#East_Village').addClass("red");
-
-
-    } else if($('#East_Village').hasClass("red")){
-        $('#East_Village').removeClass("red");
-        $('#East_Village').addClass("black");
+    } else if($('#Hell_s_Kitchen').hasClass("on")){
+        $('#Hell_s_Kitchen').removeClass("on").addClass("off");
+        $('#title').text('');
 
 
     }
 
 })
 
-$('#Soho_ChinaTown_Tribeca').on('click', () => {
+$('#Theater_District').on('click', (e) => {
 
-    if($('#Soho_ChinaTown_Tribeca').hasClass("black")){
+    if($('#Theater_District').hasClass("off")){
 
-        $('#Soho_ChinaTown_Tribeca').removeClass("black");
-        $('#Soho_ChinaTown_Tribeca').addClass("red");
-
-
-    } else if($('#Soho_ChinaTown_Tribeca').hasClass("red")){
-        $('#Soho_ChinaTown_Tribeca').removeClass("red");
-        $('#Soho_ChinaTown_Tribeca').addClass("black");
+        $('#Theater_District').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
 
 
-    }
-
-})
-
-$('#Lower_East_Side').on('click', () => {
-
-    if($('#Lower_East_Side').hasClass("black")){
-
-        $('#Lower_East_Side').removeClass("black");
-        $('#Lower_East_Side').addClass("red");
-
-
-    } else if($('#Lower_East_Side').hasClass("red")){
-        $('#Lower_East_Side').removeClass("red");
-        $('#Lower_East_Side').addClass("black");
+    } else if($('#Theater_District').hasClass("on")){
+        $('#Theater_District').removeClass("on").addClass("off");
+        $('#title').text('');
 
 
     }
 
 })
 
-$('#Financial_District').on('click', () => {
+$('#Midtown').on('click', (e) => {
 
-    if($('#Financial_District').hasClass("black")){
+    if($('#Midtown').hasClass("off")){
 
-        $('#Financial_District').removeClass("black");
-        $('#Financial_District').addClass("red");
+        $('#Midtown').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
 
 
-    } else if($('#Financial_District').hasClass("red")){
-        $('#Financial_District').removeClass("red");
-        $('#Financial_District').addClass("black");
+    } else if($('#Midtown').hasClass("on")){
+        $('#Midtown').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Chelsea').on('click', (e) => {
+
+    if($('#Chelsea').hasClass("off")){
+
+        $('#Chelsea').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Chelsea').hasClass("on")){
+        $('#Chelsea').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Nomad').on('click', (e) => {
+
+    if($('#Nomad').hasClass("off")){
+
+        $('#Nomad').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Nomad').hasClass("on")){
+        $('#Nomad').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Kips_Bay').on('click', (e) => {
+
+    if($('#Kips_Bay').hasClass("off")){
+
+        $('#Kips_Bay').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Kips_Bay').hasClass("on")){
+        $('#Kips_Bay').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#West_Village').on('click', (e) => {
+
+    if($('#West_Village').hasClass("off")){
+
+        $('#West_Village').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#West_Village').hasClass("on")){
+        $('#West_Village').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Greenwich_Village').on('click', (e) => {
+
+    if($('#Greenwich_Village').hasClass("off")){
+
+        $('#Greenwich_Village').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Greenwich_Village').hasClass("on")){
+        $('#Greenwich_Village').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#East_Village').on('click', (e) => {
+
+    if($('#East_Village').hasClass("off")){
+
+        $('#East_Village').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#East_Village').hasClass("on")){
+        $('#East_Village').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Soho_ChinaTown_Tribeca').on('click', (e) => {
+
+    if($('#Soho_ChinaTown_Tribeca').hasClass("off")){
+
+        $('#Soho_ChinaTown_Tribeca').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Soho_ChinaTown_Tribeca').hasClass("on")){
+        $('#Soho_ChinaTown_Tribeca').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Lower_East_Side').on('click', (e) => {
+
+    if($('#Lower_East_Side').hasClass("off")){
+
+        $('#Lower_East_Side').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Lower_East_Side').hasClass("on")){
+        $('#Lower_East_Side').removeClass("on").addClass("off");
+        $('#title').text('');
+
+
+    }
+
+})
+
+$('#Financial_District').on('click', (e) => {
+
+    if($('#Financial_District').hasClass("off")){
+
+        $('#Financial_District').removeClass("off").addClass("on");
+        $('#title').text(e.currentTarget.dataset.name);
+
+
+    } else if($('#Financial_District').hasClass("on")){
+        $('#Financial_District').removeClass("on").addClass("off");
+        $('#title').text('');
 
 
     }
